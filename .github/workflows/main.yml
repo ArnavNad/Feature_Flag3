@@ -24,7 +24,7 @@ jobs:
 
       - name: Fetch feature flag status
         run: |
-          python /home/runner/Desktop/Feature\ Flags/fetch_feature_flag_status.py
+          python Feature\ Flags/fetch_feature_flag_status.py
           exit_status=$?
           if [ $exit_status -ne 0 ]; then
             echo "Error: Failed to fetch feature flag status"
@@ -32,5 +32,4 @@ jobs:
           fi
 
       # Add more steps as needed
-
 
