@@ -12,8 +12,8 @@ def fetch_feature_flag_status():
     # Check if the feature flag "button_toggle" is enabled
     button_enabled = flags.is_feature_enabled("button_toggle")
 
-    return button_enabled
+    # Print the status to console
+    print("Feature flag 'button_toggle' status:", button_enabled)
 
 if __name__ == "__main__":
-    feature_flag_status = fetch_feature_flag_status()
-    print("Feature flag 'button_toggle' status:", feature_flag_status)
+    fetch_feature_flag_status()
